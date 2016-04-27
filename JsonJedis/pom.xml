@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>TestJedis</groupId>
+    <artifactId>TestJedis</artifactId>
+    <version>1.0</version>
+
+    <dependencies>
+
+        <!-- to build local jedis: mvn package -DskipTests=true -Dmaven.javadoc.skip=true
+          -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>/home/hcd/swinstall/jedis/target/jedis-3.0.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
